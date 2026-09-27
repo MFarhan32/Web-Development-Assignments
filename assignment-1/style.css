@@ -1,4 +1,5 @@
-* {
+/* Using Simple CSS */
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -102,4 +103,185 @@ footer {
   font-weight: bold;
   font-size: large;
   text-align: center;
+} */
+
+/* Using Modified CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f6fb;
+  color: #334155;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #142d4e, #254e70);
+  padding: 30px 20px;
+}
+
+.nav-content {
+  max-width: 950px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.avatar {
+  width: 95px;
+  height: 95px;
+  flex-shrink: 0;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 4px solid #0d9488;
+}
+
+.profile-text h1 {
+  color: white;
+  font-size: 32px;
+}
+
+.profile-text p {
+  color: #a9d9d4;
+  font-size: 16px;
+}
+
+/* Main content */
+main {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.heading-main {
+  background: white;
+  padding: 28px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(20, 45, 78, 0.06);
+}
+
+.heading-main h2 {
+  color: #142d4e;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #0d9488;
+}
+
+.about p {
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Education */
+.education dt {
+  font-weight: bold;
+  color: #142d4e;
+  margin-top: 15px;
+}
+
+.education dd {
+  padding-left: 20px;
+  color: #64748b;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skills-grid > div {
+  background: #f3f6fb;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #0d9488;
+}
+
+.skills-grid h4 {
+  color: #142d4e;
+  margin-bottom: 10px;
+}
+
+.skills-grid ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.skills-grid li {
+  margin-bottom: 5px;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  text-align: left;
+}
+
+.contact a {
+  display: inline-block;
+  margin: 6px;
+  padding: 10px 22px;
+  color: #0d9488;
+  text-decoration: none;
+  border: 1px solid #0d9488;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.contact a:hover {
+  background: #0d9488;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .nav-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-text h1 {
+    font-size: 25px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading-main {
+    padding: 20px;
+  }
+
+  .contact a {
+    margin: 5px;
+  }
 }
