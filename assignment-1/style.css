@@ -42,7 +42,7 @@ nav {
   padding: 15px;
 }
 
-dh {
+dt {
   font-weight: bolder;
   margin: 5px;
 }
@@ -225,6 +225,11 @@ main {
 
 .skills-grid li {
   margin-bottom: 5px;
+}
+
+/* Projects */
+.projects > div {
+  margin: 20px;
 }
 
 /* Contact */
