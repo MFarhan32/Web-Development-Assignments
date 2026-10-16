@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Binding - To Do List</title>
+   
+  </head>
+  <body>
+    <nav>
+      <h1>My To Do List</h1>
+    </nav>
+    <main>
+      <div>
+        <h2>Save your Tasks</h2>
+        <form onsubmit="addTask(event)">
+        <label for="input-text">Enter Task: </label>
+        <input id="input-text" type="text" />
+        <button type="submit">Save</button>
+        </form>
+      </div>
+      <div id="task-list-div">
+        <ul class="taskList"></ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
