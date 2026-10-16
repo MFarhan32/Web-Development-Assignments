@@ -14,7 +14,7 @@ function addTask(event){
 function renderTasks() {
 
     const ul=document.getElementById("taskList");
-
+ul.innerHTML = "";
 
     tasks.forEach((item) => {
         console.log(item)
@@ -23,6 +23,5 @@ function renderTasks() {
         console.log(li.textContent);
         ul.appendChild(li);
      })
-
-  };
+};
 
