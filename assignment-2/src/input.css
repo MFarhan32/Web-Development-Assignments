@@ -1,1 +1,8 @@
+@import url('https://googleapis.com');
+
 @import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto-carbon: "Roboto Mono", monospace; /* Replace with your specific variant if different */
+}
