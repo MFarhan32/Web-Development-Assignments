@@ -17,13 +17,25 @@
         <nav>
           <ul class="links flex justify-around w-30">
             <li>
-              <img class="h-5" src="src/searchbar.png" alt="SearchIcon" />
+              <img
+                class="h-5 cursor-pointer"
+                src="src/searchbar.png"
+                alt="SearchIcon"
+              />
             </li>
             <li>
-              <img class="h-5" src="src/profile.png" alt="ProfileIcon" />
+              <img
+                class="h-5 cursor-pointer"
+                src="src/profile.png"
+                alt="ProfileIcon"
+              />
             </li>
             <li>
-              <img class="h-5" src="src/cart.png" alt="CartIcon" />
+              <img
+                class="h-5 cursor-pointer"
+                src="src/cart.png"
+                alt="CartIcon"
+              />
             </li>
           </ul>
         </nav>
@@ -31,18 +43,372 @@
     </header>
     <section class="mt-6" id="advertisement">
       <div class="flex h-100 items-center m-6">
-        <div class="cursor-pointer border-none bg-[#b09c6d] w-11 h-20 rounded-full flex items-center justify-center"><img src="src/lessThan.svg" alt="" /></div>
-        <div class="w-10/12 m-auto "><img class="rounded-2xl" src="src/cakes.png" alt="" /></div>
-        <div class="cursor-pointer border-none bg-[#b09c6d] w-11 h-20 rounded-full flex items-center justify-center"><img src="src/greaterThan.svg" alt="" /></div>
+        <div
+          class="cursor-pointer border-none bg-[#b09c6d] w-11 h-20 rounded-full flex items-center justify-center"
+        >
+          <img src="src/lessThan.svg" alt="" />
+        </div>
+        <div class="w-10/12 m-auto">
+          <img class="rounded-2xl" src="src/cakes.png" alt="" />
+        </div>
+        <div
+          class="cursor-pointer border-none bg-[#b09c6d] w-11 h-20 rounded-full flex items-center justify-center"
+        >
+          <img src="src/greaterThan.svg" alt="" />
+        </div>
       </div>
     </section>
 
     <section>
-      <div class="h-12 flex gap-1 justify-center items-center bg-[#b09c6dee]" id="category">
-        <span class="cursor-pointer hover:bg-yellow-800 m-1.5 px-4 py-1.5 rounded-full bg-gray-200 font-bold font-poppins">Cakes</span>
-        <span class="cursor-pointer hover:bg-yellow-800 m-1.5 px-4 py-1.5 rounded-full bg-gray-200 font-bold font-poppins">Sundae</span>
-        <span class="cursor-pointer hover:bg-yellow-800 m-1.5 px-4 py-1.5 rounded-full bg-gray-200 font-bold font-poppins">Cookies</span>
-       
+      <div
+        class="h-12 flex gap-1 justify-center items-center bg-[#b09c6dee]"
+        id="category"
+      >
+        <span
+          class="cursor-pointer hover:bg-yellow-800 m-1.5 px-4 py-1.5 rounded-full bg-gray-200 font-bold font-poppins"
+          >Cakes</span
+        >
+        <span
+          class="cursor-pointer hover:bg-yellow-800 m-1.5 px-4 py-1.5 rounded-full bg-gray-200 font-bold font-poppins"
+          >Sundae</span
+        >
+        <span
+          class="cursor-pointer hover:bg-yellow-800 m-1.5 px-4 py-1.5 rounded-full bg-gray-200 font-bold font-poppins"
+          >Cookies</span
+        >
+      </div>
+    </section>
+
+    <section class="container mt-12 mx-auto">
+      <div class="cake">
+        <h1 class="font-poppins font-bold text-4xl  mb-4">Cakes</h1>
+        <div class="w-full mb-8">
+          <img class="rounded-3xl" src="src/cakes.png" alt="" />
+        </div>
+        <div
+          class="cake-products grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7"
+        >
+          <div
+            class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl"
+          >
+            <div class="">
+              <img
+                class="object-cover rounded-2xl"
+                src="src/Mousse.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Mousse</h2>
+            <p class="text-gray-600 text-sm">
+              The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)
+            </p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 2,200.00</h3>
+            <button
+              class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div
+            class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl"
+          >
+            <div class="">
+              <img
+                class="object-cover rounded-2xl"
+                src="src/FerreroClassic.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Ferrero Classic</h2>
+            <p class="text-gray-600 text-sm">
+              The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)
+            </p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 2,600.00</h3>
+            <button
+              class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div
+            class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl"
+          >
+            <div class="">
+              <img
+                class="object-cover rounded-2xl"
+                src="src/Nutella.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Nutella</h2>
+            <p class="text-gray-600 text-sm">
+              The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)
+            </p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 2,400.00</h3>
+            <button
+              class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div
+            class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl"
+          >
+            <div class="">
+              <img
+                class="object-cover rounded-2xl"
+                src="src/Heaven.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Heaven</h2>
+            <p class="text-gray-600 text-sm">
+              The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)
+            </p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 2,300.00</h3>
+            <button
+              class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div
+            class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl"
+          >
+            <div class="">
+              <img
+                class="object-cover rounded-2xl"
+                src="src/GermanFudge.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">German Fudge</h2>
+            <p class="text-gray-600 text-sm">
+              The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)
+            </p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 2,200.00</h3>
+            <button
+              class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div
+            class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl"
+          >
+            <div class="">
+              <img
+                class="object-cover rounded-2xl"
+                src="src/LotusThreeMilk.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Lotus Three Milk</h2>
+            <p class="text-gray-600 text-sm">
+              The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)
+            </p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 3,400.00</h3>
+            <button
+              class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div
+            class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl"
+          >
+            <div class="">
+              <img
+                class="object-cover rounded-2xl"
+                src="src/Parisian7Layers.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Parisian 7 Layers</h2>
+            <p class="text-gray-600 text-sm">
+              The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)
+            </p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 2,900.00</h3>
+            <button
+              class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div
+            class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl"
+          >
+            <div class="">
+              <img
+                class="object-cover rounded-2xl"
+                src="src/Coffee.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Coffee</h2>
+            <p class="text-gray-600 text-sm">
+              The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)
+            </p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 2,300.00</h3>
+            <button
+              class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div
+            class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl"
+          >
+            <div class="">
+              <img
+                class="object-cover rounded-2xl"
+                src="src/Pistachio3Milk.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Pistachio Three Milk</h2>
+            <p class="text-gray-600 text-sm">
+              The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)
+            </p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 2,700.00</h3>
+            <button
+              class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+
+          <div
+            class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl"
+          >
+            <div class="">
+              <img
+                class="object-cover rounded-2xl"
+                src="src/ThreeMilk.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Three Milk</h2>
+            <p class="text-gray-600 text-sm">
+              The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)
+            </p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 2,400.00</h3>
+            <button
+              class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div
+            class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl"
+          >
+            <div class="">
+              <img
+                class="object-cover rounded-2xl"
+                src="src/BelgianMalt.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Belgian Malt</h2>
+            <p class="text-gray-600 text-sm">
+              The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)
+            </p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 2,700.00</h3>
+            <button
+              class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div
+            class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl"
+          >
+            <div class="">
+              <img
+                class="object-cover rounded-2xl"
+                src="src/MilkyMalt.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Milky Malt</h2>
+            <p class="text-gray-600 text-sm">
+              The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)
+            </p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 1,900.00</h3>
+            <button
+              class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+
+
+          <div class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl">
+            <div class="">
+            <img class="object-cover rounded-2xl" src="src/DairyMilk.jpg" alt="" />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Dairy Milk</h2>
+            <p class="text-gray-600 text-sm">The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)</p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 2,500.00</h3>
+            <button class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2">Add to Cart</button>
+          </div>
+
+
+          <div class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl">
+            <div class="">
+            <img class="object-cover rounded-2xl" src="src/FerreroROcher.jpg" alt="" />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Ferrero Rocher</h2>
+            <p class="text-gray-600 text-sm">The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)</p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 3,600.00</h3>
+            <button class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2">Add to Cart</button>
+          </div>
+
+
+          <div class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl">
+            <div class="">
+            <img class="object-cover rounded-2xl" src="src/DubaiDreamCake.jpg" alt="" />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Dubai Dreamcake</h2>
+            <p class="text-gray-600 text-sm">The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)</p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 3,400.00</h3>
+            <button class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2">Add to Cart</button>
+          </div>
+
+
+          <div class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl">
+            <div class="">
+            <img class="object-cover rounded-2xl" src="src/Hershey'sCake.jpg" alt="" />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Hershey's Cake</h2>
+            <p class="text-gray-600 text-sm">The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)</p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 2,000.00</h3>
+            <button class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2">Add to Cart</button>
+          </div>
+
+
+          <div class="product cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl">
+            <div class="">
+            <img class="object-cover rounded-2xl" src="src/Pisrachio.jpg" alt="" />
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mt-3 mb-2">Pistachio</h2>
+            <p class="text-gray-600 text-sm">The Lightest Chocolate Cake in Town! (Approximately 2.5 LBS)</p>
+            <h3 class="font-bold mt-4 text-yellow-600">RS. 3,400.00</h3>
+            <button class="mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2">Add to Cart</button>
+          </div>
+        </div>
       </div>
     </section>
   </body>
