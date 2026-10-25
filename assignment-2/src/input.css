@@ -6,3 +6,8 @@
   --font-poppins: "Poppins", sans-serif;
   --font-roboto-carbon: "Roboto Mono", monospace; /* Replace with your specific variant if different */
 }
+
+
+.footer-font{
+  @apply text-sm;
+}
