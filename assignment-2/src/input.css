@@ -20,11 +20,19 @@
 }
 
 .links {
-  @apply flex justify-around w-30;
+  @apply hidden md:flex justify-around w-30;
 }
 
 .nav-images{
   @apply h-5;
+}
+
+#hamburger-div{
+  @apply block md:hidden;
+}
+
+#hamburger-button{
+  @apply p-2 text-gray-700 hover:text-black focus:outline-none;
 }
 
 #advertisement-section{
@@ -176,11 +184,11 @@
 }
 
 .empty-div{
-  @apply w-full bg-gray-500 h-0.5 rounded-2xl my-7;
+  @apply w-full bg-gray-500 h-0.5 rounded-2xl my-4 md:my-7;
 }
 
 #copyright{
-  @apply text-center p-5;
+  @apply text-center p-1 md:p-5;
 }
 
 
