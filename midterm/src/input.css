@@ -267,3 +267,75 @@
 .cart-button{
 @apply w-30 rounded-3xl p-1 cursor-pointer text-white font-bold;
 }
+
+
+
+/* Task 1: Category Filter */
+
+.category-filter {
+  @apply flex flex-wrap items-center justify-center gap-3 p-4;
+}
+
+.category-filter input[type="radio"] {
+  @apply sr-only;
+}
+
+.category-filter label {
+  @apply cursor-pointer rounded-full border border-gray-300 px-4 py-2;
+}
+
+.category-filter input[type="radio"]:checked + label {
+  background-color: hsl(109, 70%, 45%);
+  color: white;
+  border-color: hsl(109, 70%, 45%);
+}
+
+
+/* Show all products by default */
+.container .cake-products > a,
+.container .sundae-products > a,
+.container .cookie-products > a {
+  display: block;
+}
+
+/* Chocolate Cakes */
+body:has(#filter-chocolate:checked)
+.container .cake-products > a:not(.chocolate-cake) {
+  display: none;
+}
+
+body:has(#filter-chocolate:checked)
+.container .sundae,
+body:has(#filter-chocolate:checked)
+.container .cookie {
+  display: none;
+}
+
+/* Milk Cakes */
+body:has(#filter-milk:checked)
+.container .cake-products > a:not(.milk-cake) {
+  display: none;
+}
+
+body:has(#filter-milk:checked)
+.container .sundae,
+body:has(#filter-milk:checked)
+.container .cookie {
+  display: none;
+}
+
+/* Sundaes */
+body:has(#filter-sundaes:checked)
+.container .cake-products > a,
+body:has(#filter-sundaes:checked)
+.container .cookie {
+  display: none;
+}
+
+/* Cookies */
+body:has(#filter-cookies:checked)
+.container .cake-products > a,
+body:has(#filter-cookies:checked)
+.container .sundae {
+  display: none;
+}
