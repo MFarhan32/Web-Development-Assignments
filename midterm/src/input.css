@@ -1,0 +1,269 @@
+@import url('https://googleapis.com');
+
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto-carbon: "Roboto Mono", monospace; /* Replace with your specific variant if different */
+}
+
+.body-class{
+  @apply m-0 p-0 bg-gray-200;
+}
+
+.header-class{
+  @apply flex h-20 justify-around items-center bg-white sticky top-0 z-50;
+}
+
+#LogoImage{
+  @apply h-7;
+}
+
+.links {
+  @apply hidden md:flex justify-around w-30;
+}
+
+.nav-images{
+  @apply h-5;
+}
+
+#hamburger-div{
+  @apply block md:hidden;
+}
+
+#hamburger-button{
+  @apply p-2 text-gray-700 hover:text-black focus:outline-none;
+}
+
+#advertisement-section{
+ @apply mt-0 md:mt-6;
+}
+
+#advertisement-box{
+  @apply flex h-auto items-center my-2 md:m-3 lg:m-6;
+}
+
+
+.sign-images{
+  @apply hidden md:flex cursor-pointer border-none bg-[#b09c6d] w-11 h-20 rounded-full items-center justify-center;
+}
+
+#adver-img-div{
+ @apply w-full md:w-10/12 m-auto;
+}
+
+#adver-img{
+  @apply rounded-2xl;
+}
+
+#sticky-section{
+  @apply sticky top-20 z-40;
+}
+
+#category{
+  @apply h-12 flex gap-1 justify-center items-center bg-[#b09c6dee];
+}
+
+.category-span{
+  @apply cursor-pointer hover:bg-[#a48946] m-1.5 px-4 py-1.5 rounded-full bg-gray-200 font-bold font-poppins;
+}
+
+.container{
+  @apply mt-4 md:mt-8 mx-auto;
+}
+
+#footer-container{
+  @apply bg-white rounded-2xl h-auto;
+}
+
+.products-h1{
+  @apply font-poppins font-bold text-4xl mb-4;
+}
+.container-imgdiv{
+  @apply w-full mb-6;
+}
+
+.container-img{
+  @apply rounded-3xl;
+}
+.product-img{
+  @apply object-cover rounded-2xl duration-300 hover:scale-102;
+}
+.product-h2{
+  @apply text-xl font-bold text-gray-800 mt-3 mb-2;
+}
+.product-p{
+  @apply text-gray-600 text-sm line-clamp-2;
+}
+
+.product-h3{
+  @apply font-bold mt-4 text-yellow-600;
+}
+
+.product-btn{
+  @apply mt-3 bg-yellow-600 hover:bg-yellow-700 rounded-3xl p-2;
+}
+
+.product {
+  @apply cursor-pointer p-4 bg-white flex-col flex items-center text-center rounded-3xl duration-150 hover:-translate-y-0.5 hover:z-10 ;
+}
+
+
+.cake-products , .cookies-products , .sundae-products {
+  @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-7
+}
+
+.footer-font{
+  @apply text-sm;
+}
+
+.upper-portion{
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-7 gap-2;
+}
+
+.image-contact{
+  @apply col-span-2;
+}
+
+.just-flex{
+  @apply flex;
+}
+
+.image-contact-div{
+  @apply w-1/3 flex justify-center items-center px-6;
+}
+.image-width{
+  @apply w-full;
+}
+
+.width-image{
+  @apply w-6;
+}
+
+#contact{
+  @apply flex w-2/3 flex-col gap-1;
+}
+
+.contact-h4{
+  @apply font-poppins font-extrabold text-2xl mb-5;
+}
+
+.contact-span{
+  @apply text-gray-500;
+}
+
+.column-1{
+  @apply col-span-1;
+}
+
+.timing-h4{
+  @apply mb-5 font-poppins font-extrabold text-2xl;
+}
+
+.time-div1{
+  @apply mb-5 flex gap-9;
+}
+
+.time-div2{
+  @apply mb-5 flex gap-30;
+}
+
+.time-div3{
+  @apply flex gap-11;
+}
+
+.time-span{
+  @apply text-gray-500;
+}
+.terms-privacy{
+  @apply text-center gap-10;
+}
+
+.a-style{
+  @apply mx-3 text-gray-500 underline;
+}
+
+.empty-div{
+  @apply w-full bg-gray-500 h-0.5 rounded-2xl my-4 md:my-7;
+}
+
+#copyright{
+  @apply text-center p-1 md:p-5;
+}
+
+
+#product-nav{
+ @apply flex h-14 md:h-16 items-center justify-between bg-white px-4 md:px-8;
+}
+
+.nav-a{
+  @apply px-5 py-2 bg-[#b09c6dee] hover:bg-[#a48946] rounded-full text-center;
+}
+
+.product-container{
+  @apply flex flex-col md:flex-row container mt-4 md:mt-8 mx-auto h-auto rounded-3xl overflow-hidden;
+}
+
+.product-image{
+ @apply w-full md:w-1/2;
+}
+
+.pro-details{
+  @apply p-4 bg-white flex-col flex w-full md:w-1/2 flex-1;
+}
+
+.cart-h2{
+  @apply text-2xl font-bold text-gray-800 mt-3 mb-2;
+}
+
+.cart-h3{
+  @apply text-lg font-bold text-gray-800 mt-3 mb-2;
+}
+
+.cart-p{
+  @apply text-gray-600 text-sm;
+}
+
+.instruction{
+  @apply bg-gray-100 m-5 rounded-2xl;
+}
+
+.instruction-box{
+  @apply font-bold text-lg p-2 bg-gray-50 rounded-full;
+}
+
+.textBoxDiv{
+  @apply border border-gray-400 border-solid mt-5 rounded-2xl mb-4 border-gray-400;
+}
+
+.instructionText{
+  @apply placeholder:px-2 w-full rounded-2xl bg-white placeholder:text-sm;
+}
+
+.lower-cart{
+  @apply flex flex-col items-center md:flex-row h-auto gap-2 md:gap-10 bg-gray-100 justify-around rounded-2xl mt-auto p-2;
+}
+
+.add-remove-div{
+  @apply flex items-center gap-1;
+}
+
+.button-add-remove{
+  @apply w-8 h-8 rounded-full bg-[#b09c6dee] cursor-pointer hover:bg-[#a48946] text-white text-3xl flex items-center justify-center;
+}
+
+.items-number{
+  @apply w-20 h-8 text-center text-lg font-semibold cursor-pointer border border-gray-300 rounded-xl;
+}
+
+.price-button{
+  @apply  flex gap-10 items-center justify-center bg-[#b09c6dee] hover:bg-[#a48946] rounded-xl;
+}
+
+.total-price{
+  @apply w-30  rounded-3xl p-1;
+}
+
+.cart-button{
+@apply w-30 rounded-3xl p-1 cursor-pointer text-white font-bold;
+}
