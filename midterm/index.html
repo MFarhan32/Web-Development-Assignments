@@ -6,6 +6,7 @@
     <title>Layers Menu | Online Shopping</title>
     <link rel="icon" type="image/png" href="src/titlelogo.jpg" />
     <link href="./output.css" rel="stylesheet" />
+    <script src="./script.js" defer></script>
   </head>
   <body class="body-class">
     <header class="header-class">
@@ -89,6 +90,30 @@
   <label for="filter-cookies">Cookies</label>
 </div>
 
+<!-- Task 3: Search and Sort Controls -->
+
+<div class="flex flex-wrap justify-center items-center gap-3 p-4">
+  <input
+    type="text"
+    id="product-search"
+    placeholder="Search products by name..."
+    class="border border-gray-400 rounded-full px-4 py-2"
+  />
+
+  <button
+    type="button"
+    id="sort-price"
+    class="rounded-full px-4 py-2 text-white"
+    style="background-color: hsl(109, 70%, 45%)"
+  >
+    Sort by price
+  </button>
+</div>
+
+<p id="no-products-message" style="display: none; text-align: center;">
+  No products found
+</p>
+
 
     <section class="container">
       <div class="cake">
@@ -111,7 +136,7 @@
             </div>
           </a>
 
-          <a href="product.html" class="chocolate-cake"">
+          <a href="product.html" class="chocolate-cake">
             <div class="product">
               <div>
                 <img class="product-img" src="src/FerreroClassic.jpg" alt="" />
